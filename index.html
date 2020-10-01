@@ -1,0 +1,62 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+</head>
+<title>Sheets Page</title>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+
+<body>
+  <div class="navBar">
+    <i class="material-icons menuButton" onclick="toggleSidebar();">menu</i>
+    <i class="material-icons reloadTableButton" onclick="init();">replay</i>
+    <i class="material-icons zoomButton" onclick="zoomIn();">add_circle</i>
+    <i class="material-icons zoomButton" onclick="zoomOut();">remove_circle</i>
+
+    <div class="zoomButton contract" onclick="contract();">
+      <i class="material-icons ceLeftButton">keyboard_arrow_right</i>
+      <i class="material-icons ceRightButton">keyboard_arrow_left</i>
+    </div>
+    <div class="zoomButton expand" onclick="expand();">
+      <i class="material-icons ceLeftButton">keyboard_arrow_left</i>
+      <i class="material-icons ceRightButton">keyboard_arrow_right</i>
+    </div>
+    
+    
+    
+  </div>
+  <div class='sidebar' id='sb1'>
+    <!-- 
+    <div class='selPar selPar0' onclick="selectGroup(0);">Selection One</div>
+    <div class='selPar selPar1' onclick="selectGroup(1);">Selection Two</div>
+    <div class='selPar selPar2' onclick="selectGroup(2);">Selection Three</div>
+    -->
+  </div>
+  <div class='sidebar' id='sb2'>
+    <!-- 
+      <div class='sel sel0 sel0_0 hide' onclick="select([0,0]);">Sub Selection One</div>
+      <div class='sel sel0 sel0_1 hide' onclick="select([0,0]);">Sub Selection Two</div>
+      <div class='sel sel0 sel0_2 hide' onclick="select([0,0]);">Sub Selection Three</div>
+    -->
+  </div>
+  <div class='sidebar' id='sb3'>
+    <!-- 
+      <div class='sheet sheet0 sheet0_0_0 hide' onclick="selectSheet([0,0,0]);">Sub Selection One</div>
+      <div class='sheet sheet0 sheet0_0_0 hide' onclick="selectSheet([0,0,0]);">Sub Selection Two</div>
+      <div class='sheet sheet0 sheet0_0_0 hide' onclick="selectSheet([0,0,0]);">Sub Selection Three</div>
+    -->
+  </div>  
+<div class="body">
+  <table class="table"></table>
+</div>
+<div class="loadingScreen">
+  <div class="loading"></div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

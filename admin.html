@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<title>Define Sheets</title>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="admin.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<body>
+    <!--
+    <div class="authBox">
+        <div class="authInputContainer">
+            <input class="authInput authUser" placeholder="Username"/>
+            <input class="authInput authPass" placeholder="Password"/>
+            <div class="authButton" onclick="auth();">Sumbit</div>
+        </div>
+    </div>
+    -->
+    <div class="toolTips">
+        Tooltips
+    </div>
+    <div class="sectionBar">
+        <i class="material-icons sectionButton addSectionButton" onclick="addSection();" onmouseover="toolTips('Add new Section');">add_box</i>
+        <div class="sectionButton secID0" onclick="section(0);" onmouseover="toolTips('Goto Section');">Section A</div><div class="sectionButton secID1"  onclick="section(1)" onmouseover="toolTips('Goto Section');">Section B</div>
+    </div>
+    <input class="sectionName" onchange="renameSection()" onmouseover="toolTips('Change name of current Section');" value="">
+    <div class="buttonPanel">
+        <i class="material-icons sideButton loadTableButton" onclick="loadTable()" onmouseover="toolTips('Reset Table - Reloads data from the database. Any unsaved changes will be lost.');">autorenew</i>
+        <i class="material-icons sideButton saveTableButton" onclick="saveTable()" onmouseover="toolTips('Save data onto the Database');">save</i>
+        <i class="material-icons sideButton addGroupButton" onclick="addGroup()" onmouseover="toolTips('Add a new Group');">create_new_folder</i>
+    </div>
+    <div class="body"></div>
+</body>
+<script src="admin.js"></script>
+</body>
